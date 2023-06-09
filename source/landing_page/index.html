@@ -1,0 +1,903 @@
+
+<!doctype html>
+<html lang='ru'>
+  <head>
+    <title>Лесные штуки</title>  
+    <!-- Required meta tags -->
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css' integrity='sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn' crossorigin='anonymous'><link rel='preconnect' href='https://fonts.googleapis.com'>
+<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+<link href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet'> <style>  
+    *, div, section { 
+    font-family: 'Roboto', serif; 
+     font-size: 14px;
+    box-sizing: border-box !important;
+    }
+    
+     .header {
+            background: url(./assets/bg/R5o8DgW7FKatfGcl20230505303013.png);  background-attachment: fixed   ; background-size: cover;
+         
+        }
+        .sendmail  
+        {
+            background: url(./assets/bg/R5o8DgW7FKatfGcl20230505303013.png); background-attachment: fixed   ; background-size: cover;
+            position: relative;
+            height: 760px;
+        }
+        .feedback {
+            background: url(./assets/bg/R5o8DgW7FKatfGcl20230505303013.png); background-attachment: fixed   ; background-size: cover;
+            height: 100vh !important;
+            position: relative;
+        }     
+    
+    .cfn {
+        /**********************/
+        color: #68fb4b;}
+        
+    .zfs {font-size: 84px !important;}    
+    .cbg {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left:0px;
+        right: 0px;
+        /**********************/
+        background: #68fb4b66;  
+        backdrop-filter: blur(0pxpx) brightness(1.18) ;
+        }
+    .btn-primary {
+        padding: 20px 100px;
+        margin: 0 auto;
+        display: block;
+        text-transform: uppercase;
+        background: #68fb4b66; 
+        border: 3px solid #68fb4b;
+    }   
+    .btn-primary:hover {
+        background: #68fb4b;  
+        border: 3px solid #68fb4b;
+    } 
+    .font-big {
+        color: #fff!important;
+        font-size: 62px;
+        font-weight: 300;
+        padding: 50px 0px;
+        text-transform: uppercase;
+        Letter-spacing: 2px ; 
+    } 
+    .font-medium {
+        font-size: 30px;
+        font-weight: 300;
+        Letter-spacing: 2px ; 
+    }   
+    .text-white {
+        color: #fff!important;
+        text-shadow: 0px 0px 65px #68fb4b;
+    }
+    h1, h2, h3 , h4 {
+        font-weight: 900;
+        text-transform: uppercase;
+        Letter-spacing: 2px ;
+    }
+    h5 {
+        font-weight: 1em;
+        text-transform: uppercase;
+        Letter-spacing: 2px ;   
+    }    
+    
+    .navigation a, .navigation a:active, .navigation a:link, .navigation a:visited {font-weight: 300; color: #9e9e9e;}
+    .navigation a:hover { font-weight: 900; color: #68fb4b ;}      
+    .header {position: relative;height: 100vh !important;}    
+    
+    .navigation {
+        position: sticky;
+        top: 0;
+        z-index: 999999;
+        height: 70px;
+        padding: 15px 15px;
+        background: white;
+        text-transform: uppercase;
+        font-weight: 200;
+        box-shadow: 0px 65px 130px #68fb4b66; /**********************/
+    }
+    .picture-price {
+            height: 280px; /**********************/
+            width: 280px;  /**********************/
+            object-fit: cover;
+        margin: 40px auto;
+    }      
+    .picture-staff {
+            height: 280px; /**********************/
+            width: 280px;  /**********************/
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px white solid;
+        box-shadow: 65px 65px 130px #68fb4b66; /**********************/
+    }          
+    .picrure-partners    {
+            height: 150px; /**********************/
+            width: 150px;  /**********************/
+            object-fit: contain;
+            /* border-radius: 50%;*/
+            margin: 20px 0px;
+    }   
+    
+    .picrure-otziv {
+        height: 150px;
+        width: 150px;
+        object-fit: contain;
+        border-radius: 50%;
+        padding: 20px 20px;
+        position: relative;
+        left: -25px;
+    }    
+    
+    
+    .price-col {
+        border-radius: 20px; /**********************/
+        border: 0px white solid;
+        box-shadow: 0px 65px 130px #68fb4b66; /**********************/
+        /*width: min-content;*/
+        width: 80%;
+    }  
+    
+    .social {
+         
+        position: relative;
+    }   
+    .centmid-social {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+         
+        flex-wrap: nowrap;
+        align-items: center;
+    }  
+    
+   
+    
+    .centmid-feedback {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        height: 100vh !important;
+        flex-wrap: nowrap;
+        align-items: center;
+    }          
+
+      
+    .centmid-header {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        height: 100vh !important;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+    }   
+    .clients {
+         
+        position: relative;
+        /**********************/
+        height: 100vh !important;
+        }  
+    .centmid-clients {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        /**********************/
+        height: 100vh !important;
+        flex-wrap: nowrap;
+        align-items: center;
+    }      
+
+    .centmid-sendmail {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        /**********************/
+        height: 700px !important;
+        flex-wrap: nowrap;
+        align-items: center;
+    }  
+        
+    .footer  {
+        position: relative;
+        /**********************/
+        /*height: 300px;*/
+        }
+    .centmid-footer {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        /**********************/
+        height: 300px !important;
+        flex-wrap: nowrap;
+        align-items: center;
+    }         
+    
+    .actions    {
+        position: relative;
+        /**********************/
+        /*height: 300px;*/
+        }  
+     
+ .social-icons {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-left: 0;
+        flex-wrap: wrap;
+}
+.social-icons > li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.social-icons a {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column; 
+ background-color: #68fb4b66; 
+    width:  190px;
+    height: 190px;
+    border-radius: 50% ;
+        margin: 20px 0;
+}
+.social-icons a:hover {
+  background-color: #68fb4b;
+}
+.social-icons a svg:hover {
+    fill: #FFF;
+    width:  152px;
+    height: 152px;
+    /* position: absolute;*/
+}
+ 
+ 
+.social-icons li a svg {
+    fill: #68fb4b;
+    width:  152px;
+    height: 152px;
+ 
+}
+  
+  
+    #maps { height: 700px; width: 100%}
+    #map {  height: 100%; width: 100%; position: absolute;}
+    #map {  height: 100%; width: 100%; position: absolute;}
+    .bl_center {
+      position: absolute;
+        width: 400px;
+        height: 350px;
+        top: calc(50% - 175px);
+        z-index: 99;
+        background-color: #fff;
+        padding: 25px;
+        box-shadow: 0px 15px 34px 0px #928c8c;
+        /* border: 12px #e4e4ea solid; */
+        border-radius: 5px;
+        right: 50px; 
+      }
+      
+      
+    none {
+        display: none;
+       }  
+      @media screen and (max-width: 375px) {
+            .zfs {
+                font-size: 26px !important;
+            }
+            .h1, h1 {
+                font-size: 1.5rem;
+            }
+            .h2, h2 {
+            font-size: 1rem;
+            }
+             .bl_center {
+                right: -10px;
+            }
+             .br_center {
+                left: 10px;
+            }
+            
+      }
+      
+    </style>    
+    
+    
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'> 
+  
+  </head><img src='./assets/bg/R5o8DgW7FKatfGcl20230505303013.png' class='d-none'><body>
+    <section class='header'>
+        <div class='container-fluid cbg'> 
+            <div class='row'>
+                <div class='col-12'>
+                    <div class='centmid-header'>
+                        <div class='container'>
+                            <h1 class='py-5 zfs  text-white text-center'>
+                                Лесные штуки
+                            </h1>
+                            <h4 class='text-white text-center'>
+                                макромир на расстоянии вытянутой руки, возможность наблюдать за жизнью животных в их естественной среде
+                            </h4>
+                        </div> 
+                    </div>    
+                </div>    
+            </div>
+        </div>
+    </section>        
+      
+    <section class='about as'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-12'>
+                    <h2 class='py-5  h1 cfn text-center'>О нас</h2>
+                </div>    
+                <div class='col-12'>
+                    <p class='pb-4 h5 text-center'>Творческая мастерская для сказочной недвижимости в авторском стиле Кораблевой Анастасии. Мастер создаст из веточек, коры, бересты, грибов и других лесных материалов изделия, аналогов которых нет нигде в мире.<br>Анастасия создает сказочные домики и уютные предметы интерьера более 8 лет.</p>
+                </div>    
+            </div>
+        </div>
+    </section><section class='price pb-5 mb-5'>
+        <div class='container'>
+            <div class='row '>
+                <div class='col-12'>
+                    <h2 class='py-5   cfn text-center'>Предлагаем Вам</h2>
+                </div> 
+                <div class='col-12 pb-4 h5 text-center'>
+                Здесь представлены некоторые изделия мастера, полный список работ представлен в интернет-магазине www.livemaster.ru/nas-kor.<br>
+При заключении договора на благоустройство отельного комплекса индивидуальные условия.<br><br>Заказывая сказочную недвижимость (именно так Анастасия называет свои изделия) вы получаете сказку, детство, эмоции, улыбки ваших гостей и желание вернуться.<br><br>Все изделия создаются лишь однажды, точный повтор невозможен.
+                </div>
+            </div>    
+               <div class='row justify-content-center'>
+                <div  class=' justify-content-center text-center col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex align-items-stretch py-5'>
+                  <div class='card price-col'>
+                   <img src='./assets/product/jfVlcLq0xHghbzW720230505303013.jpg' class='picture-price' alt='Кроватка для собак "Лужайка" '>
+                    <div class='card-body'>
+                      <h5 class='card-title h3'>Кроватка для собак "Лужайка" </h5>
+                      <p class='card-text h5'>
+                       Уютная природная постель для наших хвостатых друзей. Кроватка выполнена полностью из дерева! Ножки-настоящие сосновый ветки, устойчивые, массивные. Веточки поменьше - элементы задней и передней спинки. Кроватка рассчитана на маленьких собачек и собак среднего размера. Матрасик мягкий, ткань приятная на ощупь, легко чистится. Чехол можно стирать. Он легко снимается, застегивается на скрытую молнию. Размер внешний 80х80, высота 51 см. Размер матрасика 71х66х8см.<br>
+                      </p>
+                      <p class='card-text text-center h5'>
+                       <b class='h2'> 20 400 рублей</b>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+        
+                <div  class=' justify-content-center text-center col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex align-items-stretch py-5'>
+                  <div class='card price-col'>
+                   <img src='./assets/product/ZYocMB8pjSPwqX3W20230505303013.jpg' class='picture-price' alt='Отель для насекомых "Улей"'>
+                    <div class='card-body'>
+                      <h5 class='card-title h3'>Отель для насекомых "Улей"</h5>
+                      <p class='card-text h5'>
+                      Сказочный отель для полезных насекомых сада. В нем с удовольствием поселятся или переждут непогоду пчелы-одиночки, паучки, бабочки, божьи коровки и другие малыши. А некоторые и на зимовку останутся) Домик высокий, вместительный и задекорирован со всех сторон. Поэтому его можно поставить в любом уголке участка-везде будет отлично смотреться. Декор крепится надёжно, в авторской технике. Будет служить годами без потери сказочности.<br>
+                      </p>
+                      <p class='card-text text-center h5'>
+                       <b class='h2'>18 300 рублей
+</b>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+        
+                <div  class=' justify-content-center text-center col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex align-items-stretch py-5'>
+                  <div class='card price-col'>
+                   <img src='./assets/product/rlGL4t7fqvRe8ubC20230505303013.jpg' class='picture-price' alt='Синичник "Чудо-Юдо"'>
+                    <div class='card-body'>
+                      <h5 class='card-title h3'>Синичник "Чудо-Юдо"</h5>
+                      <p class='card-text h5'>
+                      Домик для птиц может быть...сказочным!) При этом функциональным и добротным. "Чудо-Юдо" сделан из массива сосны, с соблюдением всех параметров для безопасного и комфортного проживания птиц. В нем могут поселиться горихвостки, воробьи, синицы и другие маленькие птахи, живущие в дуплах. Синичник декорирован природными материалами, все из леса-от кусочков коры до грибочков. Каждая деталь крепится вручную и держится очень надёжно, будет служить годами.<br>
+                      </p>
+                      <p class='card-text text-center h5'>
+                       <b class='h2'>4 900 рублей</b>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+         
+                                  
+                
+                </div>
+            </div>
+        </div>
+    </section><section class='clients pb-5'>  
+        
+        <div class='container-fluid cbg'>
+            <div class='centmid-clients container'>
+            <div class='row '>
+                
+                <div class='col-12'>
+                    <h2 class='py-5   cfn text-center'>Мы собрали отзовы более 100 наших клиентов</h2>
+                </div> 
+
+                <div id='carouselExampleControls' class='carousel slide' data-ride='carousel'>
+                  <div class='carousel-inner'>
+                    <div class='carousel-item active'>
+                        <div class='card-deck'>
+        <div class='card mb-3' style='max-width: 540px;'>
+          <div class='row no-gutters'>
+            <div class='col-md-8'>
+              <div class='card-body'>
+                 <h5 class='card-title h3'>Лобана
+ Карина
+ </h5>
+               </div>
+            </div>
+            <div class='col-md-4 pl-3'>
+              <img src='assets/woman/photo_woman_40.jpeg' class='picrure-otziv' alt='...'>
+            </div>            
+            <div class='col-md-12 px-3'>
+              <p class='card-text h5'>Прекрасное исполнение! Все сделано очень качественно и проработана каждая деталь! Мастер рассказала обо всех тонкостях и очень помогла с быстрой отправкой. Большое спасибо и наилучшие рекомендации для будущих клиентов!</p>
+            </div>
+          </div>
+        </div> 
+        <div class='card mb-3' style='max-width: 540px;'>
+          <div class='row no-gutters'>
+            <div class='col-md-8'>
+              <div class='card-body'>
+                 <h5 class='card-title h3'>Степихов
+ Василий
+ </h5>
+               </div>
+            </div>
+            <div class='col-md-4 pl-3'>
+              <img src='assets/man/photo_man_67.jpeg' class='picrure-otziv' alt='...'>
+            </div>            
+            <div class='col-md-12 px-3'>
+              <p class='card-text h5'>Получен заказ, упаковка очень надежная, все мелкие детали целые. По фото невозможно передать насколько они прелестны! Уверена жильё понравится нашим питомцам!!!</p>
+            </div>
+          </div>
+        </div> 
+        <div class='card mb-3' style='max-width: 540px;'>
+          <div class='row no-gutters'>
+            <div class='col-md-8'>
+              <div class='card-body'>
+                 <h5 class='card-title h3'>Оскорбин
+ Федор
+ </h5>
+               </div>
+            </div>
+            <div class='col-md-4 pl-3'>
+              <img src='assets/man/photo_man_64.jpeg' class='picrure-otziv' alt='...'>
+            </div>            
+            <div class='col-md-12 px-3'>
+              <p class='card-text h5'>Прекрасная работа. Качество, надежность, добротность - на высоте.
+Отправлено в предварительно оговоренные сроки. Упакована надежно.
+Пользуется популярностью у голодных птиц</p>
+            </div>
+          </div>
+        </div> 
+                        </div>
+                    </div>
+                    <div class='carousel-item'>
+                        <div class='card-deck'>
+        <div class='card mb-3' style='max-width: 540px;'>
+          <div class='row no-gutters'>
+            <div class='col-md-8'>
+              <div class='card-body'>
+                 <h5 class='card-title h3'>Хемлина
+ Ярослава
+ </h5>
+               </div>
+            </div>
+            <div class='col-md-4 pl-3'>
+              <img src='assets/woman/photo_woman_42.jpeg' class='picrure-otziv' alt='...'>
+            </div>            
+            <div class='col-md-12 px-3'>
+              <p class='card-text h5'>Огромное спасибо Мастеру за ее великолепную работу !!! Кармашка понравилась всей семье , надеюсь что и птички оценят ее по достоинству ! Огромное спасибо ! Уверена что она украсит мой сад еще больше !!!</p>
+            </div>
+          </div>
+        </div> 
+        <div class='card mb-3' style='max-width: 540px;'>
+          <div class='row no-gutters'>
+            <div class='col-md-8'>
+              <div class='card-body'>
+                 <h5 class='card-title h3'>Кирилловский
+ Гавриил
+ </h5>
+               </div>
+            </div>
+            <div class='col-md-4 pl-3'>
+              <img src='assets/man/photo_man_58.jpeg' class='picrure-otziv' alt='...'>
+            </div>            
+            <div class='col-md-12 px-3'>
+              <p class='card-text h5'>У нас в саду появилось чудо! Огромное спасибо Анастасии Кораблевой за сказочный домик-кормушку для белок! Спасибо за быстрое выполнение заказа, за тёплое отношение, за великолепный теремок! У Анастасии золотые руки! Желаем успехов! Будем рассказывать, и советовать всем знакомым такое украшения в саду!</p>
+            </div>
+          </div>
+        </div> 
+        <div class='card mb-3' style='max-width: 540px;'>
+          <div class='row no-gutters'>
+            <div class='col-md-8'>
+              <div class='card-body'>
+                 <h5 class='card-title h3'>Катина
+ Марьяна
+ </h5>
+               </div>
+            </div>
+            <div class='col-md-4 pl-3'>
+              <img src='assets/woman/photo_woman_36.jpeg' class='picrure-otziv' alt='...'>
+            </div>            
+            <div class='col-md-12 px-3'>
+              <p class='card-text h5'>Спасибо огромное Анастасии за чудесную кормушка для птиц! Именинник радовался как ребенок, а ему больше 70-ти лет. Посылка доставлялась Почтой России. Упаковано все было добротно, тщательно. Анастасия сразу выслала трек-номер, что бы можно было отследить доставку посылки. Все пришло целое и невредимое! Спасибо за ощущение сказки и заботу о птичках! Будем радовать их зимой!</p>
+            </div>
+          </div>
+        </div> 
+                        </div>
+                    </div>
+                  </div>
+                  <a class='carousel-control-prev' href='#carouselExampleControls' role='button' data-slide='prev'>
+                    <span class='carousel-control-prev-icon' aria-hidden='true'></span>
+                    <span class='sr-only'>Предыдущий</span>
+                  </a>
+                  <a class='carousel-control-next' href='#carouselExampleControls' role='button' data-slide='next'>
+                    <span class='carousel-control-next-icon' aria-hidden='true'></span>
+                    <span class='sr-only'>Следующий</span>
+                  </a>
+                </div>            
+             </div>
+            </div>  
+        </div>       
+    </section>  
+    <section class='sendmail'>
+        <div class='container-fluid cbg'>
+            <div class='centmid-sendmail'>
+                <div class='container'>
+                    <div class='row '><div class='col-lg-6 py-5 my-5 col-md-12 col-12'>
+                    <form method='post' action='test'>                            
+                          <div class='form-group'>
+                            <label for='exampleInputEmail1' class='text-white h5'>Адрес электронной почты</label>
+                            <input type='email' class='form-control form-control-lg' id='exampleInputEmail1' aria-describedby='emailHelp'>
+                            <small id='emailHelp' class='text-white form-text text-white'>
+                              <input type='checkbox' required > Нажимая кнопку 'Отправить' Вы даёте свое согласие на обработку введенной персональной информации в соответствии с Федеральным Законом №152-ФЗ от 27.07.2006 'О персональных данных'  
+                              </small>
+                          </div>
+                          <button type='submit' class='btn btn-primary'>Подписаться</button>
+                        </form> 
+            </div>
+            <div class='col-lg-6 col-md-12 col-12 text-white h5'> 
+                <h2 class='py-5  h1 text-white text-center'>
+                    Подписка на рассылку
+                </h2> 
+                    Вы можете подписаться на электронную рассылку и каждый месяц вы будете получать самую актуальную информацию о наших новых изделиях и мастерклассах!
+                    <br>
+                    Для подписки/отписки на электронную рассылку впишите ваш email в поле ниже и нажмите кнопку 'Подписаться'
+            </div></div>               
+                </div>
+            </div>  
+        </div>    
+    </section>
+    <section class='staff'>
+
+        <div class='container'>
+            <div class='row '>
+                <div class='col-12'>
+                    <h2 class='py-5 h1  cfn text-center'>Наши сотрудники</h2>
+                </div>
+            </div>
+            <div class='row justify-content-center'>
+            <div class='col-staff pb-5 col-lg-4 col-md-6 col-12 text-center'>
+        <img class='picture-staff m-4' src='assets/woman/master.jpg'><br>
+        <h3 class='py-4 cfn'>Кораблева
+ Анастасия
+</h3>
+        <p  class='h5'>Мастер лесной сказки</p>
+        <p  class='h5'><a href='tel:+7 (926) 382-06-20'><i class='fa fa-phone' aria-hidden='true'></i> +7 (926) 382-06-20
+</a></p>
+        <p  class='h5'><a href='mailto:nas.kor@list.ru'><i class='fa fa-envelope-o' aria-hidden='true'></i>  nas.kor@list.ru
+</a></p>       
+      </div><div class='col-staff pb-5 col-lg-4 col-md-6 col-12 text-center'>
+        <img class='picture-staff m-4' src='assets/woman/art.jpg'><br>
+        <h3 class='py-4 cfn'>Волкова
+ Любовь
+</h3>
+        <p  class='h5'>Арт-менеджер</p>
+        <p  class='h5'><a href='tel:+7 (903) 609-02-13'><i class='fa fa-phone' aria-hidden='true'></i> +7 (903) 609-02-13
+</a></p>
+        <p  class='h5'><a href='mailto: volkovalyubov@list.ru'><i class='fa fa-envelope-o' aria-hidden='true'></i> volkovalyubov@list.ru
+</a></p>         
+      </div>    
+            </div>
+        </div>
+    </section>        
+    <section class='actions cbg pb-5'>
+        <div class='container'>
+            <div class='row '>
+                <div class='col-12 pt-5'>
+                    <h2 class='py-5 h1  text-white cfn text-center'>подарит счастье наблюдать как зарождается новая жизнь: постройка гнезда, любовная песня скворца, первый полет птенцов</h2> 
+                </div>
+            </div>
+        </div>
+    </section>  
+    <section class='partners pb-5'>
+        <div class='container'>
+            <div class='row '>
+                <div class='col-12'>
+                    <h2 class='py-5 h1  cfn text-center'>Мы рабротаем с крупными компаниями</h2> 
+                </div>
+                <div class='col-lg-12 col-md-12 col-12'>
+                 
+                <div id='carouselExampleControls' class='carousel slide' data-ride='carousel'>
+                  <div class='carousel-inner'>
+                    
+                    <div class='carousel-item active'>
+       
+                        <div class='row'><div class='col-lg-3 col-md-6 col-12 text-center'>
+                                <img src='assets/logo/harley-davidson.png' class='picrure-partners' alt='...'>
+                              </div><div class='col-lg-3 col-md-6 col-12 text-center'>
+                                <img src='assets/logo/inkar.png' class='picrure-partners' alt='...'>
+                              </div><div class='col-lg-3 col-md-6 col-12 text-center'>
+                                <img src='assets/logo/nvidia.png' class='picrure-partners' alt='...'>
+                              </div> </div> 
+                    </div>
+                </div>                
+            </div>
+                  <a class='carousel-control-prev' href='#carouselExampleControls' role='button' data-slide='prev'>
+                    <span class='carousel-control-prev-icon' aria-hidden='true'></span>
+                    <span class='sr-only'>Предыдущий</span>
+                  </a>
+                  <a class='carousel-control-next' href='#carouselExampleControls' role='button' data-slide='next'>
+                    <span class='carousel-control-next-icon' aria-hidden='true'></span>
+                    <span class='sr-only'>Следующий</span>
+                  </a>
+                </div>                    
+                </div>              
+            </div>
+        </div>          
+    </section> 
+     
+
+    <section class='map'>
+          <div class='container-fluid  '>
+               <div class='row '>
+                    <div class='col-12'>
+                        <h2 class='py-5  h1 cfn text-center'>
+                        Адрес и  схема проезда</h2>
+                    </div>
+                    <div class='col-12'>
+                        <script src='https://api-maps.yandex.ru/2.1/?lang=ru_RU' type='text/javascript'></script>
+            <!-- Создаём контейнер для карты -->
+            <div id='maps' class='bl'>
+                <div id='map'>
+                    <div class='bl_center'>
+                        <div class='map_info'>
+                            <div class='py-2  h2 cfn'>Свяжитесь с нами</div>
+                            <div class='list'><i class='fa fa-volume-control-phone fa-2x' aria-hidden='true'></i>
+                              <span class='b h5'><b>Телефон:</b>
+                               <a class='page-header__phone' href='tel:+74957932188'>
+                                      +7&nbsp(903)&nbsp<span class='h5 text-black'>609-02-13</span>
+                                                            </a>
+                              </span>
+                            </div>
+                            <div class='list h5'><i class='fa fa-clock-o fa-2x' aria-hidden='true'></i>
+                              <b>Звонки принимаются ежедневно:</b>
+                                      <br>
+                                      Работаем Пн-Сб 9:00-18:00<br>
+                                      Воскресенье: выходной        					
+          
+                            </div>
+                            <div class='list h5'>
+                              <i class='fa fa-map-marker fa-2x' aria-hidden='true'></i> <span class='b'><b> По всему миру!
+   </b></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Создаём карту -->
+
+        <script type='text/javascript'>
+        ymaps.ready(init);
+        function init() {
+            var myMap = new ymaps.Map('map', { 
+                center: [56.29846381668595,44.03943461864418],
+                zoom: 14,
+                        controls: [
+                        'zoomControl', // Ползунок масштаба
+                        'rulerControl', // Линейка
+                        'routeButtonControl', // Панель маршрутизации
+                        'trafficControl', // Пробки
+                       // 'typeSelector', // Переключатель слоев карты
+                        'fullscreenControl', // Полноэкранный режим
+                    ]
+            });
+            // Все виды меток
+    // https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/reference/option.presetStorage-docpage/
+            // Собственное изображение для метки с контентом
+          
+            var myPlacemark = new ymaps.Placemark([56.29846381668595,44.03943461864418], null, {
+	preset: 'islands#blueDotIcon'
+});
+myMap.geoObjects.add(myPlacemark);
+            
+            myMap.geoObjects.add(placemark);
+        }
+        </script>
+                    
+                    
+                </div>
+            </div>
+        </div>         
+    </section>
+
+    <section class='feedback'>
+        <div class='container-fluid cbg '>
+              <div class='centmid-feedback'>
+                <div class='container'>
+                    <div class='row '>
+    <div class='py-5 col-lg-6 col-md-12 col-12 text-white'>
+                    <div class='col-lg-12 col-md-12 col-12'>
+                        <form class='needs-validation' novalidate  >
+                          
+                          <div class='form-row '>
+                            <div class='col-md-12 mb-3 text-white'>
+                              <label class='h5' for='validationCustom01'>Имя</label>
+                              <input type='text' class='form-control form-control-lg ' id='validationCustom01' placeholder='Например, Иван' required>
+                              <div class='valid-feedback text-white'>
+                                Напишите свое имя!
+                              </div>
+                            </div>
+                          </div>    
+                          
+                          <div class='form-row '>    
+                            <div class='col-md-12 mb-3 text-white'>
+                              <label class='h5' for='validationCustom02'>Фамилия</label>
+                              <input type='text' class='form-control form-control-lg ' id='validationCustom02' placeholder='Петров' required>
+                              <div class='valid-feedback text-white'>
+                                Напишите свою фамилию!
+                              </div>
+                            </div>
+                          </div>
+ 
+                               
+                            <div class='form-row text-white'>
+                    <div class='col-md-12 mb-3'>
+                      <label class='h5' for='validationCustom03' >Телефон</label>
+                      <input type='text' class='form-control form-control-lg ' id='validationCustom03' required placeholder='Например, +7(903) 123-45-67'>
+                      <div class='invalid-feedback'>
+                        Укажите номер телефона.
+                      </div>
+                    </div>
+                  </div>  
+                            <div class='form-row text-white'>
+                    <div class='col-md-12 mb-3'>
+                      <label class='h5' for='validationCustom03'>Город</label>
+                      <input type='text' class='form-control form-control-lg ' id='validationCustom03' required placeholder='Например, Москва'>
+                      <div class='invalid-feedback'>
+                        Укажите  город.
+                      </div>
+                    </div>
+                  </div>   
+                             
+                            
+                            
+                          
+                          <div class='form-group'>
+                            <div class='form-check'>
+                              <input class='form-check-input' type='checkbox' value='' id='invalidCheck' required>
+                              <label class='form-check-label text-white' for='invalidCheck'>
+                                Нажимая кнопку 'Отправить' Вы даёте свое согласие на обработку введенной персональной информации в соответствии с Федеральным Законом №152-ФЗ от 27.07.2006 'О персональных данных'
+                              </label>
+                              <div class='invalid-feedback text-white'>
+                                Вы должны согласиться перед отправкой.
+                              </div>
+                            </div>
+                          </div>
+                          <button class='btn btn-primary ' type='submit '>Отправить форму</button>
+                        </form>
+
+                        <script>
+                        // Пример стартового JavaScript для отключения отправки форм при наличии недопустимых полей
+                        (function() {
+                          'use strict';
+                          window.addEventListener('load', function() {
+                            // Получите все формы, к которым мы хотим применить пользовательские стили проверки Bootstrap
+                            var forms = document.getElementsByClassName('needs-validation');
+                            // Зацикливайтесь на них и предотвращайте подчинение
+                            var validation = Array.prototype.filter.call(forms, function(form) {
+                              form.addEventListener('submit', function(event) {
+                                if (form.checkValidity() === false) {
+                                  event.preventDefault();
+                                  event.stopPropagation();
+                                }
+                                form.classList.add('was-validated');
+                              }, false);
+                            });
+                          }, false);
+                        })();
+                        </script>
+        </div>
+                </div>   
+                <div class='p-5 col-lg-6 col-md-12 col-12 text-white'>
+                    <h2 class='font-big'>Остались вопросы <br>свяжитесь с нами</h2>
+                    <span class='font-medium'>Мы ответим на все интересующие вас вопросы</span>
+                </div>
+        
+                    </div>
+                </div>
+            </div>  
+        </div>  
+    </section>    
+<section class='social'>
+    <div class='container-fluid'>
+      <div class='centmid-social'>
+            <div class='container'>
+                <div class='row '>
+                    <h2 class='py-5  h1 cfn text-center col-12'>Присоединяйтесь к нам  </h2>
+                    <ul class='social-icons col-12'>
+
+                    
+                              <li><a class='social-icon-vk'       href='#' title='' target='_blank' rel='noopener'>
+                      <svg fill='#000000' width='800px' height='800px' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'><path d='M17.802 12.298s1.617 1.597 2.017 2.336a.127.127 0 0 1 .018.035c.163.273.203.487.123.645-.135.261-.592.392-.747.403h-2.858c-.199 0-.613-.052-1.117-.4-.385-.269-.768-.712-1.139-1.145-.554-.643-1.033-1.201-1.518-1.201a.548.548 0 0 0-.18.03c-.367.116-.833.639-.833 2.032 0 .436-.344.684-.585.684H9.674c-.446 0-2.768-.156-4.827-2.327C2.324 10.732.058 5.4.036 5.353c-.141-.345.155-.533.475-.533h2.886c.387 0 .513.234.601.444.102.241.48 1.205 1.1 2.288 1.004 1.762 1.621 2.479 2.114 2.479a.527.527 0 0 0 .264-.07c.644-.354.524-2.654.494-3.128 0-.092-.001-1.027-.331-1.479-.236-.324-.638-.45-.881-.496.065-.094.203-.238.38-.323.441-.22 1.238-.252 2.029-.252h.439c.858.012 1.08.067 1.392.146.628.15.64.557.585 1.943-.016.396-.033.842-.033 1.367 0 .112-.005.237-.005.364-.019.711-.044 1.512.458 1.841a.41.41 0 0 0 .217.062c.174 0 .695 0 2.108-2.425.62-1.071 1.1-2.334 1.133-2.429.028-.053.112-.202.214-.262a.479.479 0 0 1 .236-.056h3.395c.37 0 .621.056.67.196.082.227-.016.92-1.566 3.016-.261.349-.49.651-.691.915-1.405 1.844-1.405 1.937.083 3.337z'/></svg>
+                      </a></li>
+        <li><a class='social-icon-tg' href='#' title='' target='_blank' rel='noopener'>
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><title/><g data-name='messenger message fb facebook' id='messenger_message_fb_facebook'><path d='M16,3C8.83,3,3,8.38,3,15a11.26,11.26,0,0,0,2.17,6.63A1,1,0,1,0,6.8,20.46,9.23,9.23,0,0,1,5,15C5,9.49,9.93,5,16,5S27,9.49,27,15,22.07,25,16,25a11.92,11.92,0,0,1-3.36-.48,1,1,0,0,0-.88.16L10,26V23.92a1,1,0,0,0-2,0V28a1,1,0,0,0,.55.89,1,1,0,0,0,1-.09l3-2.23A13.66,13.66,0,0,0,16,27c7.17,0,13-5.38,13-12S23.17,3,16,3Z'/><path d='M8.45,19.89l5.35-2.67L15.59,19a2,2,0,0,0,2.82,0l6.3-6.29a1,1,0,0,0-1.16-1.6L18.2,13.78,16.41,12a2,2,0,0,0-2.82,0l-6.3,6.29A1,1,0,0,0,8,20,.93.93,0,0,0,8.45,19.89ZM15,13.41l2.29,2.3,0,0a.62.62,0,0,0,.17.11.51.51,0,0,0,.16.09l.17,0a.68.68,0,0,0,.2,0,1,1,0,0,0,.17,0,.56.56,0,0,0,.21-.06h0l.49-.24L17,17.59l-2.29-2.3,0,0a1.22,1.22,0,0,0-.19-.12.71.71,0,0,0-.15-.08l-.18,0A.65.65,0,0,0,14,15a1,1,0,0,0-.17,0,.56.56,0,0,0-.21.06h0l-.49.24Z'/></g></svg>
+                        </a></li>
+        <li><a class='social-icon-ok'       href='#' title='' target='_blank' rel='noopener' >
+                      
+                      <svg fill='#000000' width='800px' height='800px' viewBox='-6 -2 24 24' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMinYMin' class='jam jam-odnoklassniki'><path d='M4.974 14.011c-1.531-.16-2.912-.54-4.094-1.471-.147-.116-.299-.228-.432-.357-.518-.5-.57-1.074-.16-1.664.35-.506.938-.641 1.549-.35.118.055.23.126.339.201 2.203 1.524 5.23 1.566 7.441.069.22-.17.454-.308.725-.378.528-.136 1.02.059 1.303.524.324.53.32 1.05-.079 1.461-.611.633-1.347 1.09-2.164 1.409-.773.302-1.62.454-2.457.554.126.139.186.207.265.287 1.137 1.15 2.28 2.297 3.414 3.451.386.394.467.881.254 1.339-.233.5-.753.829-1.264.794-.323-.023-.575-.185-.8-.412-.858-.87-1.732-1.724-2.573-2.61-.245-.258-.363-.209-.579.015-.863.895-1.74 1.776-2.624 2.653-.396.393-.868.464-1.328.24-.488-.24-.8-.741-.775-1.246.016-.342.183-.602.416-.836 1.126-1.132 2.248-2.267 3.371-3.4.074-.076.144-.156.252-.273z'/><path d='M5.907 10.069C3.175 10.059.935 7.779.95 5.023.966 2.237 3.208-.007 5.967 0c2.764.007 4.983 2.285 4.97 5.1-.015 2.75-2.27 4.978-5.03 4.969zm2.483-5.04a2.444 2.444 0 0 0-2.443-2.458A2.447 2.447 0 0 0 3.498 5.06 2.443 2.443 0 0 0 5.96 7.5a2.439 2.439 0 0 0 2.43-2.47z'/></svg>
+                      
+                      </a></li>
+                              <li><a class='social-icon-tg' href='#' title='' target='_blank' rel='noopener'     style='padding: 25px;'>
+ 
+<svg height='100%' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;' version='1.1' viewBox='0 0 512 512' width='100%' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:serif='http://www.serif.com/' xmlns:xlink='http://www.w3.org/1999/xlink'><path d='M373.295,307.064c-6.37,-3.188 -37.687,-18.596 -43.526,-20.724c-5.838,-2.126 -10.084,-3.187 -14.331,3.188c-4.246,6.376 -16.454,20.725 -20.17,24.976c-3.715,4.251 -7.431,4.785 -13.8,1.594c-6.37,-3.187 -26.895,-9.913 -51.225,-31.616c-18.935,-16.89 -31.72,-37.749 -35.435,-44.126c-3.716,-6.377 -0.397,-9.824 2.792,-13c2.867,-2.854 6.371,-7.44 9.555,-11.16c3.186,-3.718 4.247,-6.377 6.37,-10.626c2.123,-4.252 1.062,-7.971 -0.532,-11.159c-1.591,-3.188 -14.33,-34.542 -19.638,-47.298c-5.171,-12.419 -10.422,-10.737 -14.332,-10.934c-3.711,-0.184 -7.963,-0.223 -12.208,-0.223c-4.246,0 -11.148,1.594 -16.987,7.969c-5.838,6.377 -22.293,21.789 -22.293,53.14c0,31.355 22.824,61.642 26.009,65.894c3.185,4.252 44.916,68.59 108.816,96.181c15.196,6.564 27.062,10.483 36.312,13.418c15.259,4.849 29.145,4.165 40.121,2.524c12.238,-1.827 37.686,-15.408 42.995,-30.286c5.307,-14.882 5.307,-27.635 3.715,-30.292c-1.592,-2.657 -5.838,-4.251 -12.208,-7.44m-116.224,158.693l-0.086,0c-38.022,-0.015 -75.313,-10.23 -107.845,-29.535l-7.738,-4.592l-80.194,21.037l21.405,-78.19l-5.037,-8.017c-21.211,-33.735 -32.414,-72.726 -32.397,-112.763c0.047,-116.825 95.1,-211.87 211.976,-211.87c56.595,0.019 109.795,22.088 149.801,62.139c40.005,40.05 62.023,93.286 62.001,149.902c-0.048,116.834 -95.1,211.889 -211.886,211.889m180.332,-392.224c-48.131,-48.186 -112.138,-74.735 -180.335,-74.763c-140.514,0 -254.875,114.354 -254.932,254.911c-0.018,44.932 11.72,88.786 34.03,127.448l-36.166,132.102l135.141,-35.45c37.236,20.31 79.159,31.015 121.826,31.029l0.105,0c140.499,0 254.87,-114.366 254.928,-254.925c0.026,-68.117 -26.467,-132.166 -74.597,-180.352' id='WhatsApp-Logo'/></svg>
+                      
+                      </a></li>
+        <li><a class='social-icon-rutube'  href='#' title='' target='_blank' rel='noopener'>
+<svg fill='#000000' width='800px' height='800px' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+  <path fill-rule='evenodd' d='M23,11.9972 C23,15.0688707 22.7080514,16.9571365 22.0247481,18.1281724 C21.3347709,19.3777602 20.5269977,19.7708297 18.8782989,19.8862992 C17.7148693,19.9542414 14.794638,20 12.0026667,20 C9.2044172,20 6.28275714,19.9542562 5.10860514,19.8855427 C3.47493151,19.7708031 2.66701263,19.37838 1.97791182,18.142374 C1.29279472,16.9480084 1,15.052042 1,12.0084 C1,8.94737365 1.29138368,7.06090428 1.97193166,5.86259947 C2.67010997,4.61046509 3.49111627,4.21325835 5.11100471,4.1184917 C6.23144506,4.04250638 8.99660854,4 12.0026667,4 C15.002263,4 17.766208,4.04252223 18.8782989,4.11790083 C20.5073007,4.21303163 21.3281267,4.60936303 22.020213,5.8580297 C22.7108012,7.06048454 23,8.93778123 23,11.9972 Z M20.283329,6.84963647 C19.9603324,6.26505017 19.7713697,6.17346202 18.752413,6.11391338 C17.6926261,6.04212137 14.954737,6 12.0026667,6 C9.04424331,6 6.3050775,6.04210674 5.2370951,6.1144916 C4.22844212,6.17352647 4.03674592,6.26627 3.71489655,6.84342165 C3.2475376,7.66638709 3,9.26898917 3,11.9972 C3,14.7270394 3.24886149,16.33852 3.71873501,17.1577995 C4.03565111,17.7261665 4.22600958,17.8186276 5.23703026,17.8897046 C6.34874254,17.9546989 9.24212825,18 12.0026667,18 C14.7569983,18 17.6489264,17.9546849 18.7500936,17.8904464 C19.7737637,17.8187098 19.961409,17.7274 20.2855157,17.1409953 C20.752236,16.3407623 21,14.7382734 21,12.0084 C21,9.25771396 20.7535449,7.66399511 20.283329,6.84963647 Z M10,9 L15,12 L10,15 L10,9 Z'/>
+</svg></a></li>
+                               <li><a class='social-icon-tg' href='#' title='' target='_blank' rel='noopener'>                     
+<?xml version='1.0' ?><svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><title/><g data-name='telegram social media network chat' id='telegram_social_media_network_chat'><path d='M28.59,4.29a2.23,2.23,0,0,0-2.27-.36L3.41,13.1a1.83,1.83,0,0,0,0,3.38l1.48.61a1,1,0,0,0,1.31-.53,1,1,0,0,0-.54-1.31L4.56,14.8l22.51-9a.22.22,0,0,1,.23,0,.24.24,0,0,1,.08.23L23.27,25.21a.4.4,0,0,1-.26.3.39.39,0,0,1-.39-.06l-8-6.24,7.83-7.91a1,1,0,0,0-1.22-1.56L9.75,16.54a1,1,0,1,0,1,1.72l4.83-2.85L13.23,17.8a2,2,0,0,0,.2,3.08l8,6.15a2.4,2.4,0,0,0,1.47.5,2.47,2.47,0,0,0,.83-.15,2.37,2.37,0,0,0,1.52-1.75L29.33,6.47A2.23,2.23,0,0,0,28.59,4.29Z'/></g></svg>                                           </a></li>
+        <li><a class='social-icon-rutube'  href='#' title='' target='_blank' rel='noopener'>
+<svg fill='#000000' width='800px' height='800px' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+  <path fill-rule='evenodd' d='M23,11.9972 C23,15.0688707 22.7080514,16.9571365 22.0247481,18.1281724 C21.3347709,19.3777602 20.5269977,19.7708297 18.8782989,19.8862992 C17.7148693,19.9542414 14.794638,20 12.0026667,20 C9.2044172,20 6.28275714,19.9542562 5.10860514,19.8855427 C3.47493151,19.7708031 2.66701263,19.37838 1.97791182,18.142374 C1.29279472,16.9480084 1,15.052042 1,12.0084 C1,8.94737365 1.29138368,7.06090428 1.97193166,5.86259947 C2.67010997,4.61046509 3.49111627,4.21325835 5.11100471,4.1184917 C6.23144506,4.04250638 8.99660854,4 12.0026667,4 C15.002263,4 17.766208,4.04252223 18.8782989,4.11790083 C20.5073007,4.21303163 21.3281267,4.60936303 22.020213,5.8580297 C22.7108012,7.06048454 23,8.93778123 23,11.9972 Z M20.283329,6.84963647 C19.9603324,6.26505017 19.7713697,6.17346202 18.752413,6.11391338 C17.6926261,6.04212137 14.954737,6 12.0026667,6 C9.04424331,6 6.3050775,6.04210674 5.2370951,6.1144916 C4.22844212,6.17352647 4.03674592,6.26627 3.71489655,6.84342165 C3.2475376,7.66638709 3,9.26898917 3,11.9972 C3,14.7270394 3.24886149,16.33852 3.71873501,17.1577995 C4.03565111,17.7261665 4.22600958,17.8186276 5.23703026,17.8897046 C6.34874254,17.9546989 9.24212825,18 12.0026667,18 C14.7569983,18 17.6489264,17.9546849 18.7500936,17.8904464 C19.7737637,17.8187098 19.961409,17.7274 20.2855157,17.1409953 C20.752236,16.3407623 21,14.7382734 21,12.0084 C21,9.25771396 20.7535449,7.66399511 20.283329,6.84963647 Z M10,9 L15,12 L10,15 L10,9 Z'/>
+</svg></a></li>
+        
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>      
+    <section class='footer cbg'>
+        <div class='container'>
+            <div class='row '>
+                <div class='col-12 h5 text-white text-center centmid-footer'>
+                     
+            
+                © 2023    Лесные штуки
+                    <br>    
+                    <br>
+            Все фотографии и тексты используются для демонстрации контента. Мы не используем тексты и изображения в коммерческих целях.       
+                </div>           
+            </div>
+        </div> 
+    </section>  
+
+    <!-- Дополнительный JavaScript; выберите один из двух! -->
+    <!--
+    <!-- Вариант 1: пакет jQuery и Bootstrap (включает Popper) -->
+    <!-- <script src='https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js' integrity='sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF' crossorigin='anonymous'></script>-->
+
+    <!-- Вариант 2: Отдельные JS для Popper и Bootstrap -->
+    
+    <script src='https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>
+    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js' integrity='sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN' crossorigin='anonymous'></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js' integrity='sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2' crossorigin='anonymous'></script>
+   
+  </body>
+</html>
+
